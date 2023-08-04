@@ -1,7 +1,7 @@
 * {
   margin: 0;
   font-family: Arial;
-  box-sizing: border-box;
+  border: border-box;
 }
 
 .navbar {
@@ -11,10 +11,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-}
-
-.fa-bars {
-  display: none !important;
 }
 
 .nav-logo {
@@ -271,103 +267,4 @@ ul a {
 
 .copyright {
   padding-top: 5px;
-}
-
-/* responsive css here */
-
-@media screen and (max-width: 700px) {
-  .navbar {
-    justify-content: space-between;
-    padding: 0 4%;
-  }
-  .menu-list {
-    height: 0vh;
-    position: absolute;
-    left: 0;
-    top: 30px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
-    display: none !important;
-    padding: 0 0;
-    overflow: hidden;
-    animation: load 0.4s linear forwards;
-  }
-
-  .menu-list > div {
-    margin: 2% 0;
-  }
-
-  @keyframes load {
-    0% {
-      height: 0vh;
-      padding: 0 0;
-    }
-    100% {
-      height: 45vh;
-      padding: 1% 4%;
-    }
-  }
-
-  .nav-search {
-    width: 100%;
-  }
-
-  .menu-list.active {
-    display: block !important;
-  }
-
-  .fa-bars {
-    display: block !important;
-  }
-
-  .fa-bars:hover .menu-list {
-    display: block !important;
-  }
-
-  .hero-section {
-    height: 250px; /* Adjust the height as needed for smaller devices */
-    background-size: cover; /* Use 'cover' for the background image */
-    background-position: center; /* Center the background image */
-  }
-
-  .shop-section {
-    justify-content: center; /* Center the boxes in smaller screens */
-  }
-
-  .box {
-    width: 45%;
-    margin: 2% 1%; /* Adjust the width of the boxes for smaller screens */
-  }
-
-  .box-img {
-    height: 200px; /* Adjust the height of the images for smaller screens */
-  }
-
-  .foot-panel2 {
-    background-color: #222f3d;
-    color: white;
-    min-height: 220px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  ul {
-    margin: 20px 2px;
-  }
-
-  ul a {
-    display: block;
-    font-size: 0.85rem;
-    margin-top: 10px;
-    color: #dddddd;
-  }
-
-  .foot-panel4 {
-    height: auto; /* Allow the height to adjust based on content */
-    padding: 15px 0; /* Adjust the padding for smaller screens */
-  }
 }
